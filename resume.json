@@ -2,7 +2,7 @@
   "basics": {
     "name": "Anıl Can Baykal",
     "label": "Software Engineer",
-    "summary": "Software engineer with production-proof experience in development of Mobile applications on different platforms. Managed mid sized software teams using agile methodes and delivered solid projects. An accomplished iOS developer with in-depth knowledge of the Apple ecosystem",
+    "summary": "Software engineer with production-proven experience in development of Mobile applications & backends on different platforms. Built small/mid sized software teams   agile methods and managed delivering solid projects. An accomplished iOS developer with in-depth knowledge of the Apple ecosystem",
     "picture": "https://drive.google.com/file/d/0BychyVO3kEZKdURJSXJpZG5FbUE/view?usp=sharing",
     "email": "anilcanbaykal@gmail.com",
     "phone": "(+90) 533 302 09 78 " ,
@@ -162,16 +162,16 @@
 
   "skills": [
     {
-      "name": "Mobile Application Development",
+      "name": "Mobile",
       "level": "Master",
       "keywords": [
-        "iOS (Master)",
+        "iOS (Good)",
         "Android (Competent)"
       ]
     },
 
     {
-      "name": "Cloud Computing",
+      "name": "Cloud",
       "level": "Master",
       "keywords": [
         "Amazon EC2",
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "name": "Backend Development",
+      "name": "Backend",
       "level": "Proven",
       "keywords": [
         "J2EE","tomcat", "glassfish", "jetty", "dropwizard",
@@ -189,7 +189,7 @@
     },
 
         {
-      "name": "Data ",
+      "name": "Data",
       "level": "Good",
       "keywords": [
         "Mysql","Google Bigquery", "Google DataStore" , "Mongo"
