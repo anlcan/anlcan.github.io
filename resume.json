@@ -71,12 +71,10 @@
     {
       "company": "Sednacom",
       "position": "Software Engineer",
-      "website": "http://ode.al",
       "startDate": "2007-01-01",
       "endDate" : "2007-10-01",
-      "summary" : "Started as an intern at Sednacom and became a junior software developer. Worked with Python and contributed to ongoing TinyERP (Odoo) projects by developing submodules for different clients. "
-
-
+      "summary" : "Started as an intern at Sednacom and became a junior software developer. Worked with Python and contributed to ongoing TinyERP (Odoo) projects by developing submodules for different clients. ",
+      "highlights": [  ]
 
     },
         {
