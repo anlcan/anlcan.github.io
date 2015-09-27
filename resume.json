@@ -1,0 +1,233 @@
+{
+  "basics": {
+    "name": "Anıl Can Baykal",
+    "label": "Software Engineer",
+    "summary": "Software engineer with production-proof experience in development of Mobile applications on different platforms. Managed mid sized software teams using agile methodes and delivered solid projects. An accomplished iOS developer with in-depth knowledge of the Apple ecosystem",
+    "picture": "https://drive.google.com/file/d/0BychyVO3kEZKdURJSXJpZG5FbUE/view?usp=sharing",
+    "email": "anilcanbaykal@gmail.com",
+    "phone": "(+90) 533 302 09 78 " ,
+    "website": "https://github.com/anlcan",
+    "location": {
+      "city": "Istanbul",
+      "countryCode": "Turkey"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username" : "Anıl Can Baykal",
+        "url": "https://www.linkedin.com/in/anilcanbaykal"
+      },
+      {
+        "network": "github",
+        "username": "anlcan",
+        "url": "https://github.com/anlcan"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Öde Al",
+      "position": "CTO/Co-founder",
+      "website": "https://ode.al",
+      "startDate": "2013-10-01",
+
+      "summary": "Co-founded and developed Turkey's first mobile payment platform, Ödeal İşyerim. Ödeal İşyerim allows registered businesses to accept credit card payments with the free app without having any hidden costs. ",
+      "highlights": [
+        "Startup Istanbul 2014 Finalist",
+        "LeWeb 2014 Startup Finalist",
+        "Recived the highest first round investment in Turkey [http://webrazzi.com/2015/03/11/sanko-online-mobil-odeme-sistemi-odeal-yatirim/]"
+
+      ]
+    },
+    {
+      "company": "Mobilike / Nomad Commerce",
+      "position": "Senior Software Developer/Co-founder",
+      "website": "http://mobilike.com",
+      "startDate": "2011-05-01",
+      "endDate" : "2013-06-01",
+      "summary":"Joined Mobilike, one of the leading Mobile Advertising Company in Turkey, as the Mobile Applications Lead as they manage 80+ mobile applications developed by various 3rd parties.I was responsible from coordinating the development/integration process and als from development of the a advertising and analytics SDK, Makina (later rebranded to 'seamless'). After working with many 3rd party applications, developed  SaaS framework Handsomet oo address common issues of the mobile development. A new company called `Nomad Commerce` was created  which is focued on building Hansome backed-up mobile applications. Successfully developed two commercial applications (Yellow Medya and Cobone) on three platforms (iOS, Android, WinPhone) and a quiz application(Know now!) using Handsome framework with a team of five.",
+      "highlights": [
+          "Makina ad framework (later renamed to `seamless`)",
+          "Know Now! quizz iOS app",
+          "Handsome Framework (later open sourced under the name Lembas and Cortex[http://nomadcommerce.com/#cortex])",
+          "Yellow Pages Turkey iOS/Android application"
+      ]
+    },
+    {
+      "company": "Pozitron (acquired by Monetise in 2014)",
+      "position": "Senior Software Developer",
+      "website": "http://pozitron.com",
+      "startDate": "2007-10-01",
+      "endDate" : "2011-05-01",
+      "summary": "I was hired as developer #2 at Pozitron and started working on the current J2ME framework which -still- empowers İşCep, Bilyoner on low end devices. I have moved afterwards to server side development with a project that controls provisioning and distribution of mobile applications to java based devices. Next, I have started developing on iOS platform and my first application was IsCep which is still operational. With the growth at Pozitron, I have became the Project Lead in most the projects (Biletix, Bilyoner, Thy..) and continued developing for iOS (ProDG, Finanscep).",
+      "highlights": [
+        "İşCep iOS mobile application",
+        "THY iOS mobile application",
+        "Finanscep iOS mobile application",
+        "Biletix iOS mobile application",
+        "Bilyoner iOS mobile application",
+        "ProDG iPad application for GlaxoSmithKline Turkey"
+        ]
+    },
+    {
+      "company": "Sednacom",
+      "position": "Software Engineer",
+      "website": "http://ode.al",
+      "startDate": "2007-01-01",
+      "endDate" : "2007-10-01",
+      "summary" : "started as an intern at Sednacom and became full-time junior software developer. I have worked with Python and started  contributing to ongoing ERP project by developing sub-modules (ie payments, exten- sions). "
+
+
+
+    },
+        {
+      "company": "Freelance Works",
+      "startDate": "2008-01-01",
+      "summary" : "Over the years, I have work on many successful project as a freelance contractor",
+      "highlights" : [
+      "Karnaval iPad App  (https://itunes.apple.com/tr/app/karnaval-radyo-for-ipad/id600703134?mt=8)",
+      "Quiet Riots iPhone App (https://itunes.apple.com/us/app/quiet-riots/id850522667?ls=1&mt=8)",
+      "Campaign TR iPad App (https://itunes.apple.com/us/app/campaigntr/id492593453?mt=8)"
+      ]
+
+
+
+    }
+  ],
+
+  "education": [
+
+{
+  "institution": "Bogaziçi Üniversitesi",
+  "area": "SoftwareEngineering",
+  "studyType": "Master",
+  "startDate": "2012-09-01"
+},
+  {
+    "institution": "Universite Bordeaux 1",
+    "area": "Computer Science /Parallel Systems",
+    "studyType": "Master",
+    "startDate": "2006-09-01",
+    "endDate": "2007-05-01"
+  },
+
+    {
+      "institution": "Universite Bordeaux 1",
+      "area": "Informatique",
+      "studyType": "Undergrad",
+      "startDate": "2005-09-01",
+      "endDate": "2006-05-01"
+    },
+    {
+      "institution": "Universite Nice Sophia-Antipolis",
+      "area": "Applied Math/Informatique",
+      "studyType": "Undergrad",
+      "startDate": "2002-09-01",
+      "endDate": "2005-05-01"
+    },
+
+    {
+      "institution": "Lycee Galatasaray",
+      "startDate": "1993-09-01",
+      "endDate": "2001-05-01",
+      "studyType": "High-school"
+
+    }
+  ],
+
+  "publications": [{
+    "name": "Happy-download",
+    "publisher": "Anil Can Baykal",
+    "releaseDate": "2011-10-01",
+    "website": "https://github.com/anlcan/Happy-Download",
+    "summary": "Multi threaded file download with ASIHTTPRequest"
+  },
+  {
+    "name": "Lembas Mobile Framework",
+    "publisher": "Anil Can Baykal",
+    "releaseDate": "2013-01-01",
+    "website": "http://lembas.readme.io/v1.0/",
+    "summary": "A mobile framework to easily build iOS/Android applications with server and client libraries"
+  }
+  ],
+
+  "awards": [
+    {
+      "title": "Applications and Interactive Media/Sales Category",
+      "date": "2011-11-01",
+      "awarder": "International Business Awards 2011",
+      "summary" : "ProdDG iPad application used by GlaxoSmithKline Turkey"
+
+    }
+  ],
+
+  "skills": [
+    {
+      "name": "Mobile Application Development",
+      "level": "Master",
+      "keywords": [
+        "iOS (Master)",
+        "Android (Competent)"
+      ]
+    },
+
+    {
+      "name": "Cloud Computing",
+      "level": "Master",
+      "keywords": [
+        "Amazon EC2",
+        "Google App Engine",
+        "Wmware"
+      ]
+    },
+    {
+      "name": "Backend Development",
+      "level": "Proven",
+      "keywords": [
+        "J2EE","tomcat", "glassfish", "jetty", "dropwizard",
+        "Python", "tornado"
+      ]
+    },
+
+        {
+      "name": "Data ",
+      "level": "Good",
+      "keywords": [
+        "Mysql","Google Bigquery", "Google DataStore" , "Mongo"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Turkish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "French",
+      "fluency": "Fluent"
+    }
+  ],
+
+  "references": [
+    {
+      "name": "Fatih İşbecer (CEO at Pozitron)"
+    },
+    {
+      "name": "Ali Abhary (CEO at Karnaval)"
+    },
+    {
+      "name": "Şekip Can Gökalp (Managing partner at Mobilike)"
+    },
+    {
+      "name": "Umut Gökçen (Manager at Nomad Commerce)"
+    },
+    {
+      "name": "Fevzi Güngör (CEO/Co-founder at OdeAl)"
+    }
+
+  ]
+}
