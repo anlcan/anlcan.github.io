@@ -30,12 +30,11 @@
       "position": "CTO/Co-founder",
       "website": "https://ode.al",
       "startDate": "2013-10-01",
-
-      "summary": "Co-founded and developed Turkey's first mobile payment platform, Ödeal İşyerim. Ödeal İşyerim allows registered businesses to accept credit card payments with the free app without having any hidden costs. ",
+      "summary": "Co-founded and developed Turkey's first mobile payment platform, Ödeal İşyerim. Ödeal İşyerim allows registered businesses to accept credit card payments with the free app without having any hidden costs. Built the payment system using Google App Engine & Amazon Web Services and mvp mobile applications. Currently recruiting a small team and leading the development on iOS application",
       "highlights": [
         "Startup Istanbul 2014 Finalist",
         "LeWeb 2014 Startup Finalist",
-        "Recived the highest first round investment in Turkey [http://webrazzi.com/2015/03/11/sanko-online-mobil-odeme-sistemi-odeal-yatirim/]"
+        "Received the highest first round investment in Turkey [http://webrazzi.com/2015/03/11/sanko-online-mobil-odeme-sistemi-odeal-yatirim/]"
 
       ]
     },
@@ -45,12 +44,12 @@
       "website": "http://mobilike.com",
       "startDate": "2011-05-01",
       "endDate" : "2013-06-01",
-      "summary":"Joined Mobilike, one of the leading Mobile Advertising Company in Turkey, as the Mobile Applications Lead as they manage 80+ mobile applications developed by various 3rd parties.I was responsible from coordinating the development/integration process and als from development of the a advertising and analytics SDK, Makina (later rebranded to 'seamless'). After working with many 3rd party applications, developed  SaaS framework Handsomet oo address common issues of the mobile development. A new company called `Nomad Commerce` was created  which is focued on building Hansome backed-up mobile applications. Successfully developed two commercial applications (Yellow Medya and Cobone) on three platforms (iOS, Android, WinPhone) and a quiz application(Know now!) using Handsome framework with a team of five.",
+      "summary":"Joined Mobilike, one of the leading Mobile Advertising Company in Turkey, as the Lead Software Engineerfor they manage 80+ mobile applications developed by various 3rd parties.Coordinated the development/integration process and also developed an advertising and analytics SDK, Makina (later rebranded to 'seamless'). After working with many 3rd party applications, developed  SaaS framework Handsome (similar to Parse) which solves common problems in mobile application development. A new company called `Nomad Commerce` was created  which is focued on building Hansome backed-up mobile applications. Recruited and lead a small team of software developers who successfully developed two commercial applications (Yellow Medya and Cobone) on three platforms (iOS, Android, WinPhone) and a quiz application(Know now!) using Handsome framework",
       "highlights": [
-          "Makina ad framework (later renamed to `seamless`)",
+          "Makina ad framework -- later renamed to `seamless` [http://goseamless.com]",
           "Know Now! quizz iOS app",
-          "Handsome Framework (later open sourced under the name Lembas and Cortex[http://nomadcommerce.com/#cortex])",
-          "Yellow Pages Turkey iOS/Android application"
+          "Handsome Framework -- later open sourced under the name Lembas and as a commercial product Cortex [http://nomadcommerce.com/#cortex]",
+          "Yellow Pages Turkey iOS/Android app"
       ]
     },
     {
@@ -59,14 +58,14 @@
       "website": "http://pozitron.com",
       "startDate": "2007-10-01",
       "endDate" : "2011-05-01",
-      "summary": "I was hired as developer #2 at Pozitron and started working on the current J2ME framework which -still- empowers İşCep, Bilyoner on low end devices. I have moved afterwards to server side development with a project that controls provisioning and distribution of mobile applications to java based devices. Next, I have started developing on iOS platform and my first application was IsCep which is still operational. With the growth at Pozitron, I have became the Project Lead in most the projects (Biletix, Bilyoner, Thy..) and continued developing for iOS (ProDG, Finanscep).",
+      "summary": "Hired as developer #2 at Pozitron and worked on the inhouse J2ME framework which -still- empowers İşCep, Bilyoner on low end devices. Developed server side development with a project that provisions and distribution of mobile applications to java based devices. Moved to iOS platform development in 2008 and published first mobile banking application IsCep . With the growth at Pozitron, became the Lead Developer in most the projects (Biletix, Bilyoner, Thy..) and continued developing for iOS (ProDG, Finanscep). Responsabilities also included recruting, software architecture for clients and inhouse framework research&evelopment.",
       "highlights": [
-        "İşCep iOS mobile application",
-        "THY iOS mobile application",
-        "Finanscep iOS mobile application",
-        "Biletix iOS mobile application",
-        "Bilyoner iOS mobile application",
-        "ProDG iPad application for GlaxoSmithKline Turkey"
+        "İşCep iPhone app for Is Bankasi, Turkey's biggest bank",
+        "THY iPhone app for Turkish Airlines",
+        "Finanscep iPhone app for Finansbank ",
+        "Biletix iPhone app for Ticketmaster Turkey",
+        "Bilyoner iPhone app  for Bilyoner, Turkey's biggest betting site",
+        "ProDG iPhone app for GlaxoSmithKline Turkey"
         ]
     },
     {
@@ -75,7 +74,7 @@
       "website": "http://ode.al",
       "startDate": "2007-01-01",
       "endDate" : "2007-10-01",
-      "summary" : "started as an intern at Sednacom and became full-time junior software developer. I have worked with Python and started  contributing to ongoing ERP project by developing sub-modules (ie payments, exten- sions). "
+      "summary" : "Started as an intern at Sednacom and became a junior software developer. Worked with Python and contributed to ongoing TinyERP (Odoo) projects by developing submodules for different clients. "
 
 
 
