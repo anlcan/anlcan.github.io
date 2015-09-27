@@ -1,1269 +1,629 @@
 <!doctype html>
 <html>
-
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-		<title>Anıl Can Baykal</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-		<style>
-			/********************************************
-* 	reset from
-* 	http://meyerweb.com/eric/tools/css/reset/
-*******************************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+	
+	<title>Anıl Can Baykal</title>
 
-
-/****************
-*	COMMONS		
-****************/
-body, html {
-	font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-size: 13px;
-	color: #40484f;
-	font-weight: 400;
-	letter-spacing: 0;
-	line-height: 1.46153846;
-	text-align: left;
-	webkit-text-size-adjust: 100%;
+	<style>
+	body {
+	background: #fff;
+	font: 16px 'Open Sans' Helvetica, Arial, sans-serif;
+	line-height: 1.4;
+	margin: 0 0;
+	margin-bottom: 100px;
+}
+em {
+	color: #999;
+}
+p {
+	line-height: 1.6;
+	font-size: 90%;
 }
 
 a {
-	color: #0095ff;
+	color: #2C85B1;
+	text-decoration: none;
+	font-weight: 400;
 }
-
-a:hover {
-	color: #0c65a5;
-}
-
 ul {
-	margin-top: 1rem; 
+	margin-bottom: 0;
 }
-
-li {
-	list-style-type: square;
-	list-style-position: outside;
-	margin-left: 1.3em;
+section {
+	margin: 1em 0 2em;
 }
-
-h1 {
-	font-size: 2rem;
-}
-
-h2 {
-	font-size: 1.67rem;
-}
-
-h3 {
-	font-size: 1.27rem;
-}
-
-em {
-	color: #757575;
-}
-
 blockquote {
 	margin: 0;
 	margin-bottom: 1em;
 }
-
-strong {
-	font-weight: 700;
-	font-size: 1.1em;
-}
-
-/* main container */
 #resume {
-	padding: 1rem;
-	margin-top: 2rem;
+	margin: 2em 2em 2em 2.5em;
+	max-width: 760px;
 }
 
-/* every section wrapper */
-.section {
-	margin-bottom: 2rem;
+/* Resume heading */
+.heading header { 
+
 }
 
-section .location {
-	display: block;
-	margin-top: .5em;
-	color: #606d76;
-	font-weight: 700;
-}
-
-#profiles .item {
-	padding: .5em 0; 
-}
-
-#header > #profiles,
-#header > #contact,
-#skills,
-#languages,
-#interests {
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	-webkit-justify-content: flex-start;
-	justify-content: flex-start;
-}
-
-#header > div {
-	line-height: 1.5;
-}
-
-#header > div > div {
-	margin-right: 1.2em;
-}
-
-#header h1.name {
-	font-size: 2.8rem;
-	font-weight: 200;
-	line-height: 100%;
-}
-
-#header h2.label {
-	color: #202931;
-	font-size: 1.47rem;
-	text-indent: 2px;
-}
-
-#header .picture {
-	width: 11em;
-	float: right;
-	border-radius: 4px;
-}
-
-.main-summary {
-	background: #f1f8ff;
-	padding: 1.2em 1em;
-	margin-top: 1rem;
-}
-
-.main-summary p {
-	margin-top: .5em;
-}
-
-h2.section-title {
-	display: inline-block;
-	background: #fff;
-	padding: 0 1em 0.3em 0;
-	color: #ff6d1f;
-	text-transform: uppercase;
+.heading header h1 {
+	font-size: 180%;
+	margin: 0.5em 0;
 	font-weight: 600;
-	border: none;
-	font-size: .9rem;
 }
 
-.section > header {
-	position: relative;
-}
-
-.fa {
-	margin-right: 0.25em;
-}
-
-.section > header::after {
-	position: absolute;
-	left: 0;
-	top: .7em;
-	height: 1px;
-	background: #ccc;
-	content: "";
-	width: 100%;
-	z-index: -100;
-	display: block;
-}
-
-.section.main-summary > section {
+.heading header h2 {
+	font-size: 140%;
 	margin: 0;
-}
-
-.section > section > header {
-	font-size: 1.38rem;
-	position: relative;
-	margin-top: .7em;
-}
-
-.section > section > header:first-of-type {
-	margin: 0; 
-}
-
-.section > section > header .space-left {
-	position: absolute;
-	left: -1.56rem;
-	top: 5px;
-	color: #aaa;
-	line-height: 1;
-	opacity: 0;
-}
-
-.position,
-.company,
-.organization,
-.institution,
-.date,
-.area,
-.studyType,
-.title, 
-.awarder {
-	display: inline-block;
-}
-
-.position,
-.studyType,
-.area,
-.title,
-.language,
-.name {
-	font-weight: 600;
-}
-
-.company::before,
-.institution::before,
-.organization::before,
-.awarder::before {
-	content: "@"
-}
-
-.company,
-.institution,
-.organization,
-.awarder {
-	color: #606d76;
 	font-weight: 400;
 }
 
-.section header .date {
-	font-size: 1rem;
-	display: block;
-	padding: .5em 0;
-	font-weight: 600;
+.heading header .contact .detail {
+	margin: 0 1em 0 0;
 }
 
-ul.keywords,
-ul.courses {
-	margin: 0; 
-}
-
-ul.keywords li,
-ul.courses li {
+.profile {
 	display: inline-block;
-	margin: 2px 2px 2px 0;
-	padding: 4px 5px 5px;
-	font-size: .9rem;
-	line-height: 1;
-	text-transform: lowercase;
-	color: #3e6d8e;
-	background-color: #dfeaf1;
-	border: 0 solid #dfeaf1;
-	white-space: nowrap;
+	margin: 0 1em 0 0;
 }
 
-ul.keywords li:hover,
-ul.courses li:hover {
-	background: #dfeaf0;
+.profile strong,
+.profile span {
+	display: inline-block;
+	margin: 0 1em 0 0;
+}
+/* section / line breaks */
+section h2 {
+	font-size: 140%;
+	margin: 0 0 1em;
+	text-transform: uppercase;
+	color: #BC1B39;
+	font-weight: 400;
 }
 
+/* Experience items */
 .item {
-	padding: .5em 0;
+	margin: 0 0 1em;
+	padding: 0 0 1em;
+	border-bottom: 1px solid #F2EBEC;
 }
 
-.gpa {
-	padding-bottom: .5em;
-}
-
-.fa.social {
-	font-size: 1.1em;
-}
-
-/* Social Media Brand Colors */
-.google-plus {
-	color: #dd4b39;	
-}
-
-.tumblr {
-	color:#32506d;
-}
-
-.foursquare {
-	color:  #0072b1;
-}
-
-.facebook {
-	color: #3b5998;
-}
-
-.linkedin {
-	color: #007bb6;
-}
-
-.pinterest {
-	color: #cb2027;
-}
-
-.dribbble {
-	color: #ea4c89;
-}
-
-.instagram {
-	color: #517fa4;
-}
-
-.twitter {
-	color: #00aced;
-}
-
-.soundcloud { 
-	color: #ff3a00;
-}
-
-.wordpress {
-	color: #21759b;
-}
-
-.youtube {
-	color: #bb0000;
-}
-
-.github {
-	color: #171515;
-}
-
-.stack-overflow {
-	color: #828386;
-	position: relative;
-}
-
-.flickr {
-	color: #ff0084;
-}      
-
-.stack-overflow::after {
-	position: absolute;
-	left: 0;
-	content: '\f16c';
-	color: #f68a1f;
-	overflow: hidden;
-	height: 40%;
-}
-
-#languages .item,
-#skills .item,
-#interests .item {
-	width: 15em;
-	padding: 0 .5em .5em 0;
+.item:last-child {
 	border-bottom: none;
 }
 
+
+.item header h3 {
+	margin: 0.2em 1em 0.2em 0;
+	display: inline-block;
+	font-weight: 600;
+}
+
+.item header a {
+	display: inline-block;
+}
+
+.item .position {
+	font-weight: 600;
+	font-size: 100%;
+	margin: 0.2em 1em 0.2em 0;
+}
+
+.item .startDate,
+.item .endDate {
+	color: #6B6B6B;
+}
+
+.item .highlights {
+	list-style: square;
+	font-size: 90%;
+}
+
+/* skills */
 #skills .item {
-	width: 17.5em;
+	margin: 0.5em 0;
+	padding: 0 0 0.5em;
+	font-size: 90%;
+}
+
+#skills .item .name {
+	font-weight: 600;
+	display: inline-block;
+	text-transform: uppercase;
+	margin: 0 1em 0 0;
+	width: 23%;
+	vertical-align: top;
 }
 
 #skills .item .keywords {
-	width: 15em;
+	display: inline-block;
+	width: 70%;
+	vertical-align: top;
 }
 
-/* Skills chart */
-.level .bar {
-	border: 1px solid #ddd;
-	display: block;
-	width: 10em;
-	height: 5px;
-	margin: 0em 0 1em 0;
-	position: relative;
-}
-
-.level .bar::after {
-	position: absolute;
-	content: " ";
-	top: 0;
-	left: 0;
-	background: black;
-	height: 5px;
-}
-
-.level.beginner .bar::after {
-	background: #EB5F51;
-	width: 2.5em;
-} 
-
-.level.intermediate .bar::after {
-	background: #ffdf1f;
-	width: 5em;
-} 
-
-.level.advanced .bar::after,
-.level.fluent .bar::after {
-	background: #59C596;
-	width: 7.5em;
-} 
-
-.level.master .bar::after,
-.level.native.speaker .bar::after {
-	background: #5CB85C;
-	width: 10em;
-}
-
-#references .item {
-	padding-left: .5em;
-	border-left: 5px solid #ff6d1f;
+/* education */
+#education .item {
+	display: inline-block;
+	vertical-align: top;
+	width: 49.5%;
+	border-bottom: 0;
 }
 
 
-/******************
-*	HELPER CLASSES	
-******************/
 
-.clear::after {
-	content: "";
-	display: table;
-	clear: both;
-}
+	</style>
+	<style media="print">
+		body { font-size: 12px; }
+	</style>
 
-.display {
-	display: block;
-	opacity: 1;
-}
-
-.margin1 {
-	margin-bottom: .5rem;
-}
-
-/****************
-*		TABLET
-****************/
-@media screen and (min-width: 602px) { 
-	#resume {
-		width: 80%;
-		margin: 0 auto;
-	}
-}
-
-
-/****************
-*		LAPTOP	
-****************/
-@media screen and (min-width: 1025px) { 
-	li {
-		margin-left: 1.5em;
-	}
-
-	#resume {
-		width: 750px;
-		margin: 2rem auto;
-		opacity: 0;
-		-webkit-transition: opacity .5s ease-in-out;
-		transition: opacity .5s ease-in-out;
-	}
-
-	.section > section > header .space-left {
-		opacity: 1;
-		cursor: pointer;
-	}
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 	
-	.section > section {
-		margin-left: 1.67rem;
-	}
-
-	.company::before,
-	.institution::before,
-	.organization::before,
-	.awarder::before {
-		content: "|";
-	}
-	
-	.header-left {
-		float: left;
-		width: 70%;
-		word-break: break-all;
-	}
-	
-	.section header .date {
-		float: right;
-		padding: .2em;
-	}
-
-	.display {
-		display: none;
-	}
-
-	.display:not(.none) {
-		display: block;
-	}
-
-}
-
-@media print {
-
-	.company::before,
-	.institution::before,
-	.organization::before,
-	.awarder::before {
-		content: "|";
-	}
-	
-	.main-summary {
-		padding: 0;
-		margin-top: 2rem;
-	}
-
-	.stack-overflow::after {
-		content: "";
-	}
-
-	ul.keywords li,
-	ul.courses li {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		font-size: .9rem;
-		line-height: 1;
-		text-transform: lowercase;
-		color: #3e6d8e;
-		background-color: #dfeaf1;
-		border: 0 solid #dfeaf1;
-		white-space: nowrap;
-	}
-
-	ul.keywords li::after,
-	ul.courses li::after {
-		padding: 0 0 0 .3em;
-		content: "|";
-	}
-	
-	ul.keywords li:last-of-type::after,
-	ul.courses li:last-of-type::after {
-		content: "";
-	}
-
-	.level em {
-		font-style: normal;
-		padding: .1em 0; 
-	}
-
-	.level .bar {
-		display: none;	
-	}	
-
-	#profiles .item {
-		padding: 0; 
-	}
-
-	.item.display {
-		display: block;
-		opacity: 1 !important;
-	}
-
-	.section > section > header {
-		margin-top: .75em;
-	}
-
-}
-		</style>
 	</head>
-
 	<body>
-		<div id="resume">
-				<header id="header" class="clear">
-						<img class="picture" src="https://drive.google.com/file/d/0BychyVO3kEZKdURJSXJpZG5FbUE/view?usp=sharing" alt="Anıl Can Baykal"/>
-						<div class="middle">
-							<h1 class="name">Anıl Can Baykal</h1>
-							<h2 class="label">Software Engineer</h2>
-						</div>
+	
+	<div id="resume">
 
-						<div class="location">
-								<span class="city">
-									Istanbul,
-								</span>
-								<span class="countryCode">
-									Turkey
-								</span>
-						</div>
-
-					<div id="contact">
-						<div class="website">
-							<a href="https://anlcan.github.io">https://anlcan.github.io</a>
-						</div>
-						<div class="email">
-							<a href="/cdn-cgi/l/email-protection#0a6b646366696b64686b73616b664a6d676b636624696567"><span class="__cf_email__" data-cfemail="cdaca3a4a1aeaca3afacb4a6aca18daaa0aca4a1e3aea2a0">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
+	<section class="heading">
+		<header>
+			<h1>Anıl Can Baykal</h1>
+			<div class="contact">
+				<span class="detail">
+					<a href="/cdn-cgi/l/email-protection#9ffef1f6f3fcfef1fdfee6f4fef3dff8f2fef6f3b1fcf0f2"><span class="__cf_email__" data-cfemail="0e6f6067626d6f606c6f77656f624e69636f6762206d6163">[email&#160;protected]</span><script data-cfhash='f9e31' type="text/javascript">
 /* <![CDATA[ */!function(){try{var t="currentScript"in document?document.currentScript:function(){for(var t=document.getElementsByTagName("script"),e=t.length;e--;)if(t[e].getAttribute("data-cfhash"))return t[e]}();if(t&&t.previousSibling){var e,r,n,i,c=t.previousSibling,a=c.getAttribute("data-cfemail");if(a){for(e="",r=parseInt(a.substr(0,2),16),n=2;a.length-n;n+=2)i=parseInt(a.substr(n,2),16)^r,e+=String.fromCharCode(i);e=document.createTextNode(e),c.parentNode.replaceChild(e,c)}t.parentNode.removeChild(t);}}catch(u){}}()/* ]]> */</script></a>
-						</div>
-						<div class="phone">
-							(+90) 533 302 09 78 
-						</div>
-					</div>
-
-					<div id="profiles">
-						<div class="item">
-								<div class="username">
-									<span class="fa fa-linkedin linkedin social"></span>
-									<span class="url">
-										<a href="https://www.linkedin.com/in/anilcanbaykal">Anıl Can Baykal</a>
-									</span>
-								</div>
-						</div>
-						<div class="item">
-								<div class="username">
-									<span class="fa fa-github github social"></span>
-									<span class="url">
-										<a href="https://github.com/anlcan">anlcan</a>
-									</span>
-								</div>
-						</div>
-					</div>
-				</header>
-		
-					<section class="section main-summary">
-						<section>
-							<div><p>Software engineer with production-proven experience in development of Mobile applications & backends on different platforms. Built small/mid sized software teams, managed using agile methods and delivered solid projects.</p></div>
-						</section>
-					</section>
-
-				<section class="section margin1">
-					<header>
-						<h2 class='section-title'>Skills</h2>
-					</header>
-					<section id="skills">
-						<div class="item">
-							<h3 class="name">
-								Mobile
-							</h3>
-							<div class="level master">
-								<em>Master</em>
-								<div class="bar"></div>
-							</div>
-							<ul class="keywords">
-								<li>iOS (Good)</li>
-								<li>Android (Competent)</li>
-							</ul>
-						</div>
-						<div class="item">
-							<h3 class="name">
-								Cloud
-							</h3>
-							<div class="level master">
-								<em>Master</em>
-								<div class="bar"></div>
-							</div>
-							<ul class="keywords">
-								<li>Amazon EC2</li>
-								<li>Google App Engine</li>
-								<li>Wmware</li>
-							</ul>
-						</div>
-						<div class="item">
-							<h3 class="name">
-								Backend
-							</h3>
-							<div class="level proven">
-								<em>Proven</em>
-								<div class="bar"></div>
-							</div>
-							<ul class="keywords">
-								<li>J2EE</li>
-								<li>tomcat</li>
-								<li>glassfish</li>
-								<li>jetty</li>
-								<li>dropwizard</li>
-								<li>Python</li>
-								<li>tornado</li>
-							</ul>
-						</div>
-						<div class="item">
-							<h3 class="name">
-								Data
-							</h3>
-							<div class="level good">
-								<em>Good</em>
-								<div class="bar"></div>
-							</div>
-							<ul class="keywords">
-								<li>Mysql</li>
-								<li>Google Bigquery</li>
-								<li>Google DataStore</li>
-								<li>Mongo</li>
-							</ul>
-						</div>
-					</section>
-				</section>
-
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Experience (5)</h2>
-					</header>
-					<section id="work">
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-down"></span>
-									</span>
-									<div class="position">
-										CTO/Co-founder
-									</div>
-									<div class="company">
-										Öde Al
-									</div>
-									<div class="date">
-										<span class="startDate">
-											October 2013
-										</span>
-										<span class="endDate">
-											- Current
-										</span>
-									</div>
-								</header>
+				</span>
+				<span class="detail">
+					(+90) 533 302 09 78 
+				</span>
+				<span class="detail">
+					<a href="https://anlcan.github.io">https://anlcan.github.io</a>
+				</span>
+			</div>
+		</header>
 
 
+		<p>Software engineer with production-proven experience in development of Mobile applications &amp; backends on different platforms. Built small/mid sized software teams, managed using agile methods and delivered solid projects.</p>
 
-								<div class="item display" style="opacity:1">
-									<div class="summary">
-										<p>Co-founded and developed Turkey&#x27;s first mobile payment platform, Ödeal İşyerim. Ödeal İşyerim allows registered businesses to accept credit card payments with the free app without having any hidden costs. Built the payment system using Google App Engine &amp; Amazon Web Services and mvp mobile applications. Currently recruiting a small team and leading the development on iOS application</p>
-									</div>
-									<div class="website">
-										<a href="https://ode.al">https://ode.al</a>
-									</div>
-									<ul class="highlights">
-											<li>Startup Istanbul 2014 Finalist</li>
-											<li>LeWeb 2014 Startup Finalist</li>
-											<li>Received the highest first round investment in Turkey [http://webrazzi.com/2015/03/11/sanko-online-mobil-odeme-sistemi-odeal-yatirim/]</li>
-									</ul>
-							</div>
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-right"></span>
-									</span>
-									<div class="position">
-										Senior Software Developer/Co-founder
-									</div>
-									<div class="company">
-										Mobilike / Nomad Commerce
-									</div>
-									<div class="date">
-										<span class="startDate">
-											May 2011
-										</span>
-										<span class="endDate">
-											- June 2013
-										</span>
-									</div>
-								</header>
+			<div class="profile">
+				<strong class="network">
+					LinkedIn
+				</strong>
+				<span class="username">
+					<a href="https://www.linkedin.com/in/anilcanbaykal">Anıl Can Baykal</a>
+				</span>
+			</div>
+			<div class="profile">
+				<strong class="network">
+					github
+				</strong>
+				<span class="username">
+					<a href="https://github.com/anlcan">anlcan</a>
+				</span>
+			</div>
 
+	</section>
 
+	<section id="skills">
+		<h2>Skills</h2>
+		<div class="item">
+			<div class="name">
+				Mobile
+			</div>
+			<div class="keywords">
+					iOS (Good),
+					Android (Competent)
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				Cloud
+			</div>
+			<div class="keywords">
+					Amazon EC2,
+					Google App Engine,
+					Wmware
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				Backend
+			</div>
+			<div class="keywords">
+					J2EE,
+					tomcat,
+					glassfish,
+					jetty,
+					dropwizard,
+					Python,
+					tornado
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				Data
+			</div>
+			<div class="keywords">
+					Mysql,
+					Google Bigquery,
+					Google DataStore,
+					Mongo
+			</div>
+		</div>
+	</section>
 
-								<div class="item display none" style="opacity:0">
-									<div class="summary">
-										<p>Joined Mobilike, one of the leading Mobile Advertising Company in Turkey, as the Lead Software Engineerfor they manage 80+ mobile applications developed by various 3rd parties.Coordinated the development/integration process and also developed an advertising and analytics SDK, Makina (later rebranded to &#x27;seamless&#x27;). After working with many 3rd party applications, developed  SaaS framework Handsome (similar to Parse) which solves common problems in mobile application development. A new company called &#x60;Nomad Commerce&#x60; was created  which is focued on building Hansome backed-up mobile applications. Recruited and lead a small team of software developers who successfully developed two commercial applications (Yellow Medya and Cobone) on three platforms (iOS, Android, WinPhone) and a quiz application(Know now!) using Handsome framework</p>
-									</div>
-									<div class="website">
-										<a href="http://mobilike.com">http://mobilike.com</a>
-									</div>
-									<ul class="highlights">
-											<li>Makina ad framework -- later renamed to &#x60;seamless&#x60; [http://goseamless.com]</li>
-											<li>Know Now! quizz iOS app</li>
-											<li>Handsome Framework -- later open sourced under the name Lembas and as a commercial product Cortex [http://nomadcommerce.com/#cortex]</li>
-											<li>Yellow Pages Turkey iOS/Android app</li>
-									</ul>
-							</div>
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-right"></span>
-									</span>
-									<div class="position">
-										Senior Software Developer
-									</div>
-									<div class="company">
-										Pozitron (acquired by Monetise in 2014)
-									</div>
-									<div class="date">
-										<span class="startDate">
-											October 2007
-										</span>
-										<span class="endDate">
-											- May 2011
-										</span>
-									</div>
-								</header>
+	<section class="experience">
+		<h2>Experience</h2>
+		<section class="item">
+			<header>
+					<h3 class="name">Öde Al</h3>
+			</header>
+			<span class="position">
+				CTO/Co-founder
+			</span>
 
+			<span class="startDate">
+				Oct 2013
+			</span>
+			<span class="endDate">
+				- Present
+			</span>
 
+			<div class="summary">
+				<p>Co-founded and developed Turkey&#x27;s first mobile payment platform, Ödeal İşyerim. Ödeal İşyerim allows registered businesses to accept credit card payments with the free app without having any hidden costs. Built the payment system using Google App Engine &amp; Amazon Web Services and mvp mobile applications. Currently recruiting a small team and leading the development on iOS application</p>
+			</div>
+			<ul class="highlights">
+				<li>Startup Istanbul 2014 Finalist</li>
+				<li>LeWeb 2014 Startup Finalist</li>
+				<li>Received the highest first round investment in Turkey [http://webrazzi.com/2015/03/11/sanko-online-mobil-odeme-sistemi-odeal-yatirim/]</li>
+			</ul>
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">Mobilike / Nomad Commerce</h3>
+			</header>
+			<span class="position">
+				Senior Software Developer/Co-founder
+			</span>
 
-								<div class="item display none" style="opacity:0">
-									<div class="summary">
-										<p>Hired as developer #2 at Pozitron and worked on the inhouse J2ME framework which -still- empowers İşCep, Bilyoner on low end devices. Developed server side development with a project that provisions and distribution of mobile applications to java based devices. Moved to iOS platform development in 2008 and published first mobile banking application IsCep . With the growth at Pozitron, became the Lead Developer in most the projects (Biletix, Bilyoner, Thy..) and continued developing for iOS (ProDG, Finanscep). Responsabilities also included recruting, software architecture for clients and inhouse framework research&amp;evelopment.</p>
-									</div>
-									<div class="website">
-										<a href="http://pozitron.com">http://pozitron.com</a>
-									</div>
-									<ul class="highlights">
-											<li>İşCep iPhone app for Is Bankasi, Turkey&#x27;s biggest bank</li>
-											<li>THY iPhone app for Turkish Airlines</li>
-											<li>Finanscep iPhone app for Finansbank </li>
-											<li>Biletix iPhone app for Ticketmaster Turkey</li>
-											<li>Bilyoner iPhone app  for Bilyoner, Turkey&#x27;s biggest betting site</li>
-											<li>ProDG iPhone app for GlaxoSmithKline Turkey</li>
-									</ul>
-							</div>
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-right"></span>
-									</span>
-									<div class="position">
-										Software Engineer
-									</div>
-									<div class="company">
-										Sednacom
-									</div>
-									<div class="date">
-										<span class="startDate">
-											January 2007
-										</span>
-										<span class="endDate">
-											- October 2007
-										</span>
-									</div>
-								</header>
+			<span class="startDate">
+				May 2011
+			</span>
+			<span class="endDate">
+				- Jun 2013
+			</span>
 
+			<div class="summary">
+				<p>Joined Mobilike, one of the leading Mobile Advertising Company in Turkey, as the Lead Software Engineerfor they manage 80+ mobile applications developed by various 3rd parties.Coordinated the development/integration process and also developed an advertising and analytics SDK, Makina (later rebranded to &#x27;seamless&#x27;). After working with many 3rd party applications, developed  SaaS framework Handsome (similar to Parse) which solves common problems in mobile application development. A new company called &#x60;Nomad Commerce&#x60; was created  which is focued on building Hansome backed-up mobile applications. Recruited and lead a small team of software developers who successfully developed two commercial applications (Yellow Medya and Cobone) on three platforms (iOS, Android, WinPhone) and a quiz application(Know now!) using Handsome framework</p>
+			</div>
+			<ul class="highlights">
+				<li>Makina ad framework -- later renamed to &#x60;seamless&#x60; [http://goseamless.com]</li>
+				<li>Know Now! quizz iOS app</li>
+				<li>Handsome Framework -- later open sourced under the name Lembas and as a commercial product Cortex [http://nomadcommerce.com/#cortex]</li>
+				<li>Yellow Pages Turkey iOS/Android app</li>
+			</ul>
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">Pozitron (acquired by Monetise in 2014)</h3>
+			</header>
+			<span class="position">
+				Senior Software Developer
+			</span>
 
+			<span class="startDate">
+				Oct 2007
+			</span>
+			<span class="endDate">
+				- May 2011
+			</span>
 
-								<div class="item display none" style="opacity:0">
-									<div class="summary">
-										<p>Started as an intern at Sednacom and became a junior software developer. Worked with Python and contributed to ongoing TinyERP (Odoo) projects by developing submodules for different clients. </p>
-									</div>
-							</div>
-								<header>
-									<span class="space-left">
-											<span class="fa fa-caret-right"></span>
-									</span>
-									<div class="company">
-										Freelance Works
-									</div>
-									<div class="date">
-										<span class="startDate">
-											January 2008
-										</span>
-										<span class="endDate">
-											- Current
-										</span>
-									</div>
-								</header>
+			<div class="summary">
+				<p>Hired as developer #2 at Pozitron and worked on the inhouse J2ME framework which -still- empowers İşCep, Bilyoner on low end devices. Developed server side development with a project that provisions and distribution of mobile applications to java based devices. Moved to iOS platform development in 2008 and published first mobile banking application IsCep . With the growth at Pozitron, became the Lead Developer in most the projects (Biletix, Bilyoner, Thy..) and continued developing for iOS (ProDG, Finanscep). Responsabilities also included recruting, software architecture for clients and inhouse framework research&amp;evelopment.</p>
+			</div>
+			<ul class="highlights">
+				<li>İşCep iPhone app for Is Bankasi, Turkey&#x27;s biggest bank</li>
+				<li>THY iPhone app for Turkish Airlines</li>
+				<li>Finanscep iPhone app for Finansbank </li>
+				<li>Biletix iPhone app for Ticketmaster Turkey</li>
+				<li>Bilyoner iPhone app  for Bilyoner, Turkey&#x27;s biggest betting site</li>
+				<li>ProDG iPhone app for GlaxoSmithKline Turkey</li>
+			</ul>
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">Sednacom</h3>
+			</header>
+			<span class="position">
+				Software Engineer
+			</span>
 
+			<span class="startDate">
+				Jan 2007
+			</span>
+			<span class="endDate">
+				- Oct 2007
+			</span>
 
+			<div class="summary">
+				<p>Started as an intern at Sednacom and became a junior software developer. Worked with Python and contributed to ongoing TinyERP (Odoo) projects by developing submodules for different clients. </p>
+			</div>
+		</section>
+		<section class="item">
+			<header>
+					<h3 class="name">Freelance Works</h3>
+			</header>
 
-								<div class="item display none" style="opacity:0">
-									<div class="summary">
-										<p>Over the years, I have work on many successful project as a freelance contractor</p>
-									</div>
-									<ul class="highlights">
-											<li>Karnaval iPad App  [https://itunes.apple.com/tr/app/karnaval-radyo-for-ipad/id600703134?mt=8]</li>
-											<li>Quiet Riots iPhone App [https://itunes.apple.com/us/app/quiet-riots/id850522667?ls=1&amp;mt=8]</li>
-											<li>Campaign TR iPad App [https://itunes.apple.com/us/app/campaigntr/id492593453?mt=8]</li>
-									</ul>
-							</div>
-					</section>
-				</section>
+			<span class="startDate">
+				Jan 2008
+			</span>
+			<span class="endDate">
+				- Present
+			</span>
 
+			<div class="summary">
+				<p>Over the years, I have work on many successful project as a freelance contractor</p>
+			</div>
+			<ul class="highlights">
+				<li>Karnaval iPad App  [https://itunes.apple.com/tr/app/karnaval-radyo-for-ipad/id600703134?mt=8]</li>
+				<li>Quiet Riots iPhone App [https://itunes.apple.com/us/app/quiet-riots/id850522667?ls=1&amp;mt=8]</li>
+				<li>Campaign TR iPad App [https://itunes.apple.com/us/app/campaigntr/id492593453?mt=8]</li>
+			</ul>
+		</section>
+	</section>
 
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Education</h2>
-					</header>
-					<section id="education">
-							<header class="clear">
-								<span class="space-left">
-										<span class="fa fa-caret-down"></span>
-								</span>
-								<div class="header-left">
-										<div class="studyType">
-											Master
-										</div>
-										<div class="area">
-											SoftwareEngineering
-										</div>
-										<div class="institution">
-											Bogaziçi Üniversitesi
-										</div>
-								</div>
-								<div class="date">
-									<span class="startDate">
-										2012
-									</span>
-									<span class="endDate">
-										- Current
-									</span>
-								</div>
-							</header>
+	
+	<section id="education">
+		<h2>Education</h2>
+		<div class="item">
+			<header>
+					<h3 class="name">Bogaziçi Üniversitesi</h3>
+			</header>
 
+			<div class="dates">
+				<span class="startDate">
+					Sep 2012
+				</span>
+				<span class="endDate">
+					- Present
+				</span>
+			</div>
 
+			<div class="qualification">
+				<span class="studyType">
+					Master
+				</span>
 
-								<div class="item display" style="opacity:1">
-							</div>
-							<header class="clear">
-								<span class="space-left">
-										<span class="fa fa-caret-right"></span>
-								</span>
-								<div class="header-left">
-										<div class="studyType">
-											Master
-										</div>
-										<div class="area">
-											Computer Science /Parallel Systems
-										</div>
-										<div class="institution">
-											Universite Bordeaux 1
-										</div>
-								</div>
-								<div class="date">
-									<span class="startDate">
-										2006
-									</span>
-									<span class="endDate">
-										- 2007
-									</span>
-								</div>
-							</header>
+				<span class="area">
+					- SoftwareEngineering
+				</span>
 
+			</div>
 
+		</div>
+		<div class="item">
+			<header>
+					<h3 class="name">Universite Bordeaux 1</h3>
+			</header>
 
-								<div class="item display none" style="opacity:0">
-							</div>
-							<header class="clear">
-								<span class="space-left">
-										<span class="fa fa-caret-right"></span>
-								</span>
-								<div class="header-left">
-										<div class="studyType">
-											Undergrad
-										</div>
-										<div class="area">
-											Informatique
-										</div>
-										<div class="institution">
-											Universite Bordeaux 1
-										</div>
-								</div>
-								<div class="date">
-									<span class="startDate">
-										2005
-									</span>
-									<span class="endDate">
-										- 2006
-									</span>
-								</div>
-							</header>
+			<div class="dates">
+				<span class="startDate">
+					Sep 2006
+				</span>
+				<span class="endDate">
+					- May 2007
+				</span>
+			</div>
 
+			<div class="qualification">
+				<span class="studyType">
+					Master
+				</span>
 
+				<span class="area">
+					- Computer Science /Parallel Systems
+				</span>
 
-								<div class="item display none" style="opacity:0">
-							</div>
-							<header class="clear">
-								<span class="space-left">
-										<span class="fa fa-caret-right"></span>
-								</span>
-								<div class="header-left">
-										<div class="studyType">
-											Undergrad
-										</div>
-										<div class="area">
-											Applied Math/Informatique
-										</div>
-										<div class="institution">
-											Universite Nice Sophia-Antipolis
-										</div>
-								</div>
-								<div class="date">
-									<span class="startDate">
-										2002
-									</span>
-									<span class="endDate">
-										- 2005
-									</span>
-								</div>
-							</header>
+			</div>
 
+		</div>
+		<div class="item">
+			<header>
+					<h3 class="name">Universite Bordeaux 1</h3>
+			</header>
 
+			<div class="dates">
+				<span class="startDate">
+					Sep 2005
+				</span>
+				<span class="endDate">
+					- May 2006
+				</span>
+			</div>
 
-								<div class="item display none" style="opacity:0">
-							</div>
-							<header class="clear">
-								<span class="space-left">
-										<span class="fa fa-caret-right"></span>
-								</span>
-								<div class="header-left">
-										<div class="studyType">
-											High-school
-										</div>
-										<div class="institution">
-											Lycee Galatasaray
-										</div>
-								</div>
-								<div class="date">
-									<span class="startDate">
-										1993
-									</span>
-									<span class="endDate">
-										- 2001
-									</span>
-								</div>
-							</header>
+			<div class="qualification">
+				<span class="studyType">
+					Undergrad
+				</span>
 
+				<span class="area">
+					- Informatique
+				</span>
 
+			</div>
 
-								<div class="item display none" style="opacity:0">
-							</div>
-					</section>
-				</section>
+		</div>
+		<div class="item">
+			<header>
+					<h3 class="name">Universite Nice Sophia-Antipolis</h3>
+			</header>
 
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Awards</h2>
-					</header>
-					<section id="awards">
-						<header class="clear">
-							<span class="space-left">
-									<span class="fa fa-caret-down"></span>
-							</span>
-							<div class="header-left">
-									<div class="title">
-										Applications and Interactive Media/Sales Category
-									</div>
-									<div class="awarder">
-										International Business Awards 2011
-									</div>
-							</div>
-								<div class="date">
-									1 November 2011
-								</div>
-						</header>
-							<div class="item display" style="opacity:1">
-								<div class="summary">
-									<p>ProdDG iPad application used by GlaxoSmithKline Turkey</p>
-								</div>
-						</div>
-					</section>
-				</section>
+			<div class="dates">
+				<span class="startDate">
+					Sep 2002
+				</span>
+				<span class="endDate">
+					- May 2005
+				</span>
+			</div>
 
-				<section class="section">
-					<header>
-						<h2 class='section-title'>Publications</h2>
-					</header>
-					<section id="publications">
-							<header class="clear">
-								<span class="space-left">
-									<span class="fa fa-caret-down"></span>
-								</span>
-								<div class="header-left">
-										<span class="name">
-											<span class="website">
-												<a href="https://github.com/anlcan/Happy-Download">Happy-download</a>
-											</span>
-										</span>
-										<span class="publisher">
-											in Anil Can Baykal
-										</span>
-								</div>
-									<span class="date">
-										1 October 2011
-									</span>
-							</header>
-								<div class="item display" style="opacity:1">
-								<div class="summary">
-									<p>Multi threaded file download with ASIHTTPRequest</p>
-								</div>
-							</div>
-							<header class="clear">
-								<span class="space-left">
-									<span class="fa fa-caret-right"></span>
-								</span>
-								<div class="header-left">
-										<span class="name">
-											<span class="website">
-												<a href="http://lembas.readme.io/v1.0/">Lembas Mobile Framework</a>
-											</span>
-										</span>
-										<span class="publisher">
-											in Anil Can Baykal
-										</span>
-								</div>
-									<span class="date">
-										1 January 2013
-									</span>
-							</header>
-								<div class="item display none" style="opacity:0">
-								<div class="summary">
-									<p>A mobile framework to easily build iOS/Android applications with server and client libraries</p>
-								</div>
-							</div>
-					</section>
-				</section>
+			<div class="qualification">
+				<span class="studyType">
+					Undergrad
+				</span>
 
-				<section class="section margin1">
-					<header>
-						<h2 class='section-title'>Languages</h2>
-					</header>
-					<section id="languages">
-							<div class="display">
-										<h3 class="language">
-											Turkish
-										</h3>
-								<div class="item">
-										<div class="level fluency native speaker">
-											<em>Native speaker</em>
-											<div class="bar"></div>
-										</div>
-								</div>
-							</div>
-							<div class="display">
-										<h3 class="language">
-											English
-										</h3>
-								<div class="item">
-										<div class="level fluency fluent">
-											<em>Fluent</em>
-											<div class="bar"></div>
-										</div>
-								</div>
-							</div>
-							<div class="display">
-										<h3 class="language">
-											French
-										</h3>
-								<div class="item">
-										<div class="level fluency fluent">
-											<em>Fluent</em>
-											<div class="bar"></div>
-										</div>
-								</div>
-							</div>
-					</section>
-				</section>
+				<span class="area">
+					- Applied Math/Informatique
+				</span>
+
+			</div>
+
+		</div>
+		<div class="item">
+			<header>
+					<h3 class="name">Lycee Galatasaray</h3>
+			</header>
+
+			<div class="dates">
+				<span class="startDate">
+					Sep 1993
+				</span>
+				<span class="endDate">
+					- May 2001
+				</span>
+			</div>
+
+			<div class="qualification">
+				<span class="studyType">
+					High-school
+				</span>
 
 
-				<section class="section">
-					<header>
-						<h2 class='section-title'>References</h2>
-					</header>
-					<section id="references">
-						<div class="item">
-							<div class="name">
-								Fatih İşbecer (CEO at Pozitron)
-							</div>
-						</div>
-						<div class="item">
-							<div class="name">
-								Ali Abhary (CEO at Karnaval)
-							</div>
-						</div>
-						<div class="item">
-							<div class="name">
-								Şekip Can Gökalp (Managing partner at Mobilike)
-							</div>
-						</div>
-						<div class="item">
-							<div class="name">
-								Umut Gökçen (Manager at Nomad Commerce)
-							</div>
-						</div>
-						<div class="item">
-							<div class="name">
-								Fevzi Güngör (CEO/Co-founder at OdeAl)
-							</div>
-						</div>
-					</section>
-				</section>
-		</div>		
-		<script>
-			(function(){
-				var elements = document.querySelector("#resume");
+			</div>
 
-				// adding the element to the all container
-				// and using event delegation
-				elements.addEventListener("click", function(e) {
-					var current = e.target;
-					// font awesone arrows
-					var arrowRight = current.classList.contains('fa-caret-right');
-					var arrowDown = current.classList.contains('fa-caret-down');
+		</div>
+	</section>
+	
+	<section id="awards">
+		<h2>Awards</h2>
+		<div class="item">
+			<div class="title">
+				Applications and Interactive Media/Sales Category
+			</div>
+			<div class="date">
+				undefined NaN
+			</div>
+			<div class="awarder">
+				International Business Awards 2011
+			</div>
+			<div class="summary">
+				<p>ProdDG iPad application used by GlaxoSmithKline Turkey</p>
+			</div>
+		</div>
+	</section>
+	
+	<section id="publications">
+		<h2>Publications</h2>
+		<div class="item">
+			<div class="name">
+				Happy-download
+			</div>
+			<div class="publisher">
+				Anil Can Baykal
+			</div>
+			<div class="releaseDate">
+				2011-10-01
+			</div>
+			<div class="website">
+				<a href="https://github.com/anlcan/Happy-Download">Link</a>
+			</div>
+			<div class="summary">
+				<p>Multi threaded file download with ASIHTTPRequest</p>
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				Lembas Mobile Framework
+			</div>
+			<div class="publisher">
+				Anil Can Baykal
+			</div>
+			<div class="releaseDate">
+				2013-01-01
+			</div>
+			<div class="website">
+				<a href="http://lembas.readme.io/v1.0/">Link</a>
+			</div>
+			<div class="summary">
+				<p>A mobile framework to easily build iOS/Android applications with server and client libraries</p>
+			</div>
+		</div>
+	</section>
 
-					if(current && current.nodeName == "SPAN" && (arrowRight || arrowDown)) {
-						var header = e.target.parentNode.parentNode;
-						var item = header.nextSibling;
+	<section id="languages">
+		<h2>Languages</h2>
+		<div class="item">
+			<div class="language">
+				Turkish
+			</div>
+			<div class="fluency">
+				<em>Native speaker</em>
+			</div>
+		</div>
+		<div class="item">
+			<div class="language">
+				English
+			</div>
+			<div class="fluency">
+				<em>Fluent</em>
+			</div>
+		</div>
+		<div class="item">
+			<div class="language">
+				French
+			</div>
+			<div class="fluency">
+				<em>Fluent</em>
+			</div>
+		</div>
+	</section>
 
-						// select the .item element from the siblings
-						while (!item.classList || !item.classList.contains('item')) {
-							item = item.nextSibling;
-						}
-
-						// hide or show the .item element
-						item.classList.toggle('none');
-
-						// if the .item is going to be shown then imcrease is opacity 
-						// every 20 milliseconds to make a fadeIn effect
-						if (!item.classList.contains('none')) {
-							var id = setInterval(function() {
-								item.style.opacity = parseFloat(item.style.opacity) + 0.09;
-								if (parseFloat(item.style.opacity) >= 1) {
-									clearInterval(id);
-								} 
-							}, 20);
-						} else {
-							item.style.opacity = 0;
-						}
-
-						current.classList.toggle('fa-caret-right');
-						current.classList.toggle('fa-caret-down');
-					}
-
-				}, false);
-				
-				// Make the #resume visible only when the DOM is fully loaded
-				elements.style.opacity = '1';
-			})();
-		</script>
+	
+	<section id="references">
+		<h2>References</h2>
+		<div class="item">
+			<div class="name">
+				— Fatih İşbecer (CEO at Pozitron)
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				— Ali Abhary (CEO at Karnaval)
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				— Şekip Can Gökalp (Managing partner at Mobilike)
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				— Umut Gökçen (Manager at Nomad Commerce)
+			</div>
+		</div>
+		<div class="item">
+			<div class="name">
+				— Fevzi Güngör (CEO/Co-founder at OdeAl)
+			</div>
+		</div>
+	</section>
+	
+	</div>
+	
 	<script type="text/javascript">
 /* <![CDATA[ */
 (function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
 /* ]]> */
 </script>
 </body>
-
 </html>
